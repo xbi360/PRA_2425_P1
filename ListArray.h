@@ -1,4 +1,4 @@
-#include <iostream>
+#include <ostream>
 #include "List.h"
 
 template <typename T>
