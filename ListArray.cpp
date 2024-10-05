@@ -109,6 +109,22 @@ void ListArray<T>::insert(int pos,T e){
 	n++;
 
 }
+//insertar al inicio de la lista
 template <typename T>
 void ListArray<T>::prepend(T e){
+	if(n>=max){
+		resize(max*2);
+	}
+	insert(0,e);
+}
+//insertar al final de la lista 
+template <typename T>
+void ListArray<T>::append(T e){
+	if (n>max){
+		resize(max*2);
+	}
+	arr[n]=e;
+	n++;
+}
+
 
