@@ -24,7 +24,7 @@ template <typename T>
 T ListLinked<T>::operator[](int pos) {
     // Verificamos si la posición es válida
     if (pos < 0 || pos >= n) {
-        throw std::out_of_range("Position out of bounds"); // Lanzamos excepción si está fuera de rango
+        throw std::out_of_range("Introduce una posicion valida"); // Lanzamos excepción si está fuera de rango
     }
 
     Node<T>* current = first; // Inicializamos un puntero para recorrer la lista
