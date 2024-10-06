@@ -9,4 +9,4 @@ bin/testNode: testNode.cpp Node.h
 	g++ -o bin/testNode testNode.cpp Node.h
 bin/testListLinked: testListlinked.cpp Listlinked.h
 	mkdir -p bin
-	g++ -o bin/testNode testNode.cpp Node.h
+	g++ -o bin/testListLinked testListLinked.cpp ListLinked.h
