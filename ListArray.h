@@ -1,8 +1,8 @@
 #ifndef LISTARRAY_H
 #define LISTARRAY_H
+
 #include <ostream>
 #include "List.h"
-
 
 template <typename T>
 class ListArray: public List <T>{
@@ -28,4 +28,4 @@ class ListArray: public List <T>{
 		friend std::ostream& operator<<(std::ostream &out, const ListArray<T> &list);
 		~ListArray();//destructor 
 };
-#endif LISTARRAY_H
+#endif

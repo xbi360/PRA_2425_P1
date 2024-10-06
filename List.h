@@ -14,5 +14,4 @@ class List {
 		virtual int size();
 		virtual~List();
 };
-
-#endif LIST_H
+#endif

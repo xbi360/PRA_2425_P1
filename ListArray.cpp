@@ -1,6 +1,5 @@
 #include "ListArray.h"
 
-
 template <typename T>
 const int ListArray<T>::MINSIZE = 2; // Inicialización de MINSIZE
 
@@ -36,18 +35,19 @@ void ListArray<T>::resize(int new_size) {
     	max = new_size; 
 }
 //sobrecarga de <<
-template <typename T>
+template <typename T> 
 std::ostream& operator<<(std::ostream &out, const ListArray<T> &list) {
-	out<<"[";
-	for (int i=0;i<list.n;i++){
-		out<<list.arr[i];
-		if(i<list.a-1){
-			out<<",";
-		}
-	}
-	out<<"]";
-	return out;
+    out << "[";
+    for (int i = 0; i < list.n; ++i) { // Asegúrate de que 'n' sea el tamaño correcto
+        out << list.arr[i];
+        if (i < list.n - 1) { // Cambié 'a' por 'n' aquí
+            out << ", "; // Agrega un espacio después de la coma
+        }
+    }
+    out << "]";
+    return out;
 }
+
 //verificar si la lista está vacía
 template <typename T>
 bool ListArray<T>::empty(){
