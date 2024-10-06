@@ -1,5 +1,5 @@
 #include "ListArray.h"
-
+#include <iostream>
 template <typename T>
 const int ListArray<T>::MINSIZE = 2; // Inicialización de MINSIZE
 
