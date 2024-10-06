@@ -1,4 +1,5 @@
-#include "List.h"
+#ifndef NODE_H
+#define NODE_H
 #include <ostream>
 template <typename T>
 class Node {
@@ -9,3 +10,4 @@ class Node {
 		~Node();
 		friend std::ostream& operator<<(std::ostream &out, const Node<T> &node); 
 };
+#endf
