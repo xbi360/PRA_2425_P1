@@ -4,7 +4,7 @@
 #include <string>
 #include "Point2D.h"
 class Shape{
-    protected:
+    public:
         std::string color;
         Shape();
         Shape(std::string color);

@@ -1,8 +1,5 @@
 #include "Shape.h"
-/* Shape();
-        Shape(std::string color);
-        std::string get_color() const;
-        void set_color(std::string c);*/
+
 Shape::Shape():color("rojo"){};
 
 
