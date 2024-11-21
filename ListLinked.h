@@ -15,7 +15,7 @@ private:
 public:
     ListLinked():first(nullptr), n(0) {}
     // Constructor
-
+	
 
     T operator[](int pos){
          // Verificamos si la posición es válida
@@ -33,6 +33,19 @@ public:
     return current->data; // Devolvemos el dato del nodo en la posición 'pos'
 
     }
+    //Metodo para obtener el primer nodo
+    Node <T>* get_first()const{
+	    return first;
+    }
+
+    void remove_first(){
+	    if(first!=nullptr){
+		    Node<T> *temp = first;
+		    first=first->next;
+		    delete temp;
+	    }
+   }
+
 
     friend std::ostream& operator<<(std::ostream& out, const ListLinked<T>& list){
         Node<T>* current = list.first;
